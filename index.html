@@ -2,15 +2,73 @@
 <html lang="en">
     <head>
         <title>JPL 365</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
     </head>
     <body>
         <header>
-            <div class="logo">JPL 365</div>
+            <div class="logo">JPL <span>365</span></div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="#About">About</a>
+                <a href="#Contact">Contact</a>
+            </nav>
         </header>
-        <h1>Site is under construction</h1>
-        <p>Contact us via email info@jpl365.com</p>
-        
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Don't want to be left behind in the digital era?</h1>
+                <h2>Start digital transformation for your business today.</h2>
+                <button>Get In Touch</button>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll</span>
+                <div class="hero-scroll-line"></div>
+            </div>
+        </section>
+        <main>
+            <section>
+                <h1>Why us</h1>
+                <div class="container">
+                    <div>
+                        <p>
+                        We Give you maximum value by crafting solutions that best fit what you are
+                        trying to accomplish in your organization.
+                        
+                        <br> <br>
+                        We help you figure out how to translate your strategic vision into a digital
+                        transformation service that make the most sense for you.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <p>Talk to us via Email <a href="mailto:info@jpl365.com">Here</a><br></p>
+                <p>Or send us a quick message</p>
+                <form action="">
+                    <label for="Name">First Name</label><br>
+                    <input type="text" name="firstName" required><br>
 
+                    <label for="Name">Second Name</label><br>
+                    <input type="text" name="secondName" required><br>
+
+                    <label for="Name">Email</label><br>
+                    <input type="email" name="Email" required><br>
+
+                    <label for="organization">Organization</label><br>
+                    <input type="text" name="organization" required><br>
+
+                    <label for="Message">Message</label><br>
+                    <textarea name="message" id="message"></textarea><br>
+                    <input type="submit">
+
+
+                </form>
+            </section>
+
+        </main>
+        
         <footer style="background-color: black; color: white; ">
            &copy; 2026 JPL 365  All Rights Reserved. 
         </footer>
