@@ -3,8 +3,22 @@
     <head>
         <title>JPL 365</title>
         <link rel="stylesheet" href="style.css">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
+        <meta name="description" content="We help small and mid-size businesses streamline operations, 
+        automate workflows, and scale faster with expert Zoho implementation, customization, and custom software development.">
+
+
+        <link rel="stylesheet" href="style.css">
+
+
+        <!-- EmailJS -->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
+        (function(){
+        emailjs.init("8tVls5q7tnNBYZ0aT");
+        })();
+        </script>
     </head>
     <body>
         <header>
@@ -12,15 +26,15 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="blog.html">Blog</a>
-                <a href="#About">About</a>
-                <a href="#Contact">Contact</a>
+                <a href="">About</a>
+                <a href="#contact">Contact</a>
             </nav>
         </header>
         <section class="hero">
             <div class="hero-content">
                 <h1>Don't want to be left behind in the digital era?</h1>
                 <h2>Start digital transformation for your business today.</h2>
-                <button>Get In Touch</button>
+                <a href="#contact"><button>Get In Touch</button></a>
             </div>
             <div class="hero-scroll">
                 <span>Scroll</span>
@@ -39,32 +53,28 @@
                         <br> <br>
                         We help you figure out how to translate your strategic vision into a digital
                         transformation service that make the most sense for you.
+                        <br> <br>
                         </p>
                     </div>
+                    <a href="blog.html"><button>VISIT BLOG</button></a>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
+                <h1>Contact Us</h1>
                 <p>Talk to us via Email <a href="mailto:info@jpl365.com">Here</a><br></p>
-                <p>Or send us a quick message</p>
-                <form action="">
-                    <label for="Name">First Name</label><br>
-                    <input type="text" name="firstName" required><br>
+                <p><i>Or send us a quick message</i></p>
+                <div class="details">
+                    
+                    <input type="text" id="firstName" placeholder="First Name">
+                    <input type="text" id="secondName" placeholder="Second Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="text" id="organization" placeholder="Organization">
 
-                    <label for="Name">Second Name</label><br>
-                    <input type="text" name="secondName" required><br>
+                    <textarea id="message" placeholder="Leave us a short message"></textarea>
+                    <button onclick="submitForm()">Submit</button>
+                    <div id="form-msg"> Message received we'll be in touch within 24 hours.</div>
 
-                    <label for="Name">Email</label><br>
-                    <input type="email" name="Email" required><br>
-
-                    <label for="organization">Organization</label><br>
-                    <input type="text" name="organization" required><br>
-
-                    <label for="Message">Message</label><br>
-                    <textarea name="message" id="message"></textarea><br>
-                    <input type="submit">
-
-
-                </form>
+                </details>
             </section>
 
         </main>
@@ -72,6 +82,7 @@
         <footer style="background-color: black; color: white; ">
            &copy; 2026 JPL 365  All Rights Reserved. 
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
 
