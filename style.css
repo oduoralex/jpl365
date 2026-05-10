@@ -52,6 +52,7 @@ header {
   justify-content: space-between;
   padding: 1.1rem 6%;
   border-bottom: 2px solid var(--border-color);
+  height: 100px;
 }
 
 .logo {
@@ -98,7 +99,7 @@ nav a:hover::after { width: 100%; }
 /* ── HERO ─────────────────────────────────────────────────── */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
