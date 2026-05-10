@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blog — JPL 365</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">JPL <span>365</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="blog-header">
+    <div class="section-label">Ideas &amp; Insights</div>
+    <h1>Things worth<br><em>thinking about.</em></h1>
+    <p class="sub">Written by the JPL 365 team</p>
+  </div>
+
+  <hr class="rule">
+
+  <main>
+
+    <div class="featured">
+      <div class="featured-text">
+        <p class="eyebrow">Editor's Pick &mdash; May 2026</p>
+        <h2>Why a CRM is more than just a sales and marketing tool</h2>
+        <p class="excerpt">Traditionally CRM has always been regarded as just a sales and marketing tool which is not always the case as one of the biggest gains can come from</p>
+
+        <div class="full-content" id="featured-full" style="display:none; margin-top:1rem;">
+          <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.9; max-width:520px;">
+            Operations, customer service, supplier management and partner relationships.
+          </p>
+          <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.9; max-width:520px; margin-top:1rem;">
+            Here are some main business operations and how each can benefit from a CRM: <br><br>
+            <i>1. Marketing</i> <br><br>
+            Marketing Team would be able to segment prospects and customers and have visibilty of every lead. <br>
+            This will provide clear understanding of the effectiveness of all marketing activities and help measure the 
+            Return on Investment (ROI) by tracking leads and deals generated from each event or campaign. <br><br>
+
+            <i>2. Sales</i><br><br>
+            Sales manager will understand their pipeline much better and able to forecast sales more accurately. <br>
+            The sales team will benefit from reduced admin, a better understanding of their clients and the opportunity to spend more time selling and less time inputing data. <br><br>
+
+            <a href="index.html#contact"><i>Get CRM today</i></a>
+ 
+          </p>
+        </div>
+
+        <div class="byline">
+          <span>JPL Team</span>
+          <span class="byline-sep">|</span>
+          <span>May 6, 2026</span>
+          <span class="byline-sep">|</span>
+          <span>9 min read</span>
+        </div>
+        <a href="#" class="read" id="featured-toggle"
+          onclick="togglePost('featured-full', 'featured-toggle', 'Read the full piece', 'Collapse'); return false;">Read the full piece</a>
+      </div>
+      <div class="featured-img-wrap">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80&auto=format&fit=crop" alt="">
+        <span class="issue-tag">Issue No. 14</span>
+      </div>
+    </div>
+
+    <div class="posts-list">
+
+      <!-- one -->
+      <div class="post-row">
+        <div class="post-row-num">01</div>
+        <div>
+          <p class="post-row-tag">Zoho</p>
+          <p class="post-row-title">SIX Reasons Why Your Business Is need of a CRM</p>
+          <p class="post-row-excerpt">1. Your sales team does not have a clear, well defined process for generating new business</p>
+          <div class="post-row-meta">
+            <span>Apr 28, 2026</span><div class="sep"></div><span>5 min read</span>
+          </div>
+          <div class="full-content" id="post-01-full" style="display:none; margin-top:1rem;">
+            <p style="font-size:0.84rem; color:var(--text-secondary); line-height:1.75;">
+              <br> 2.You have customer data in several different places and are using multiple systems that do not integrate with each other.
+              <br>3.
+            </p>
+          </div>
+          <a href="#" class="post-read-more"
+            onclick="togglePost('post-01-full', this, 'Read more', 'Collapse'); return false;">Read more</a>
+        </div>
+        <img class="post-row-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80&auto=format&fit=crop" alt="">
+      </div>
+
+      <!-- two -->
+
+      <div class="post-row">
+        <div class="post-row-num">02</div>
+        <div>
+          <p class="post-row-tag">Automation</p>
+          <p class="post-row-title">We automated our entire invoice cycle. Here's exactly what we did.</p>
+          <p class="post-row-excerpt">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt.</p>
+          <div class="post-row-meta">
+            <span>Apr 19, 2026</span><div class="sep"></div><span>6 min read</span>
+          </div>
+          <div class="full-content" id="post-02-full" style="display:none; margin-top:1rem;">
+            <p style="font-size:0.84rem; color:var(--text-secondary); line-height:1.75;">
+              Full article content for post 02 goes here. Walk through the tools used, the workflow built, and the time saved per month after automating the invoice cycle end to end.
+            </p>
+          </div>
+          <a href="#" class="post-read-more"
+            onclick="togglePost('post-02-full', this, 'Read more', 'Collapse'); return false;">Read more</a>
+        </div>
+        <img class="post-row-img" src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&q=80&auto=format&fit=crop" alt="">
+      </div>
+
+      <div class="post-row">
+        <div class="post-row-num">03</div>
+        <div>
+          <p class="post-row-tag">Operations</p>
+          <p class="post-row-title">Why most digital transformation projects quietly die after month three</p>
+          <p class="post-row-excerpt">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+          <div class="post-row-meta">
+            <span>Apr 10, 2026</span><div class="sep"></div><span>7 min read</span>
+          </div>
+          <div class="full-content" id="post-03-full" style="display:none; margin-top:1rem;">
+            <p style="font-size:0.84rem; color:var(--text-secondary); line-height:1.75;">
+              Full article content for post 03 goes here. Cover the common patterns — lack of internal champion, scope creep, poor change management — and what the projects that actually stick have in common.
+            </p>
+          </div>
+          <a href="#" class="post-read-more"
+            onclick="togglePost('post-03-full', this, 'Read more', 'Collapse'); return false;">Read more</a>
+        </div>
+        <img class="post-row-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80&auto=format&fit=crop" alt="">
+      </div>
+
+      <div class="post-row">
+        <div class="post-row-num">04</div>
+        <div>
+          <p class="post-row-tag">Strategy</p>
+          <p class="post-row-title">Build vs. buy: an honest framework for small business software decisions</p>
+          <p class="post-row-excerpt">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla.</p>
+          <div class="post-row-meta">
+            <span>Mar 31, 2026</span><div class="sep"></div><span>5 min read</span>
+          </div>
+          <div class="full-content" id="post-04-full" style="display:none; margin-top:1rem;">
+            <p style="font-size:0.84rem; color:var(--text-secondary); line-height:1.75;">
+              Full article content for post 04 goes here. Present the decision framework — total cost of ownership, team capability, long-term maintenance, and when custom builds actually make sense for small teams.
+            </p>
+          </div>
+          <a href="#" class="post-read-more"
+            onclick="togglePost('post-04-full', this, 'Read more', 'Collapse'); return false;">Read more</a>
+        </div>
+        <img class="post-row-img" src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80&auto=format&fit=crop" alt="">
+      </div>
+
+      <div class="post-row">
+        <div class="post-row-num">05</div>
+        <div>
+          <p class="post-row-tag">Zoho</p>
+          <p class="post-row-title">Zoho One or individual apps — what nobody tells you before you commit</p>
+          <p class="post-row-excerpt">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur voluptatem.</p>
+          <div class="post-row-meta">
+            <span>Mar 20, 2026</span><div class="sep"></div><span>4 min read</span>
+          </div>
+          <div class="full-content" id="post-05-full" style="display:none; margin-top:1rem;">
+            <p style="font-size:0.84rem; color:var(--text-secondary); line-height:1.75;">
+              Full article content for post 05 goes here. Break down pricing, integration depth, onboarding overhead, and the hidden costs of committing to the full suite vs picking individual tools.
+            </p>
+          </div>
+          <a href="#" class="post-read-more"
+            onclick="togglePost('post-05-full', this, 'Read more', 'Collapse'); return false;">Read more</a>
+        </div>
+        <img class="post-row-img" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80&auto=format&fit=crop" alt="">
+      </div>
+
+    </div>
+
+    <div class="aside-strip">
+      <div class="aside-block">
+        <p class="label">On technology</p>
+        <p class="quote">"The best tool is the one your team will actually use tomorrow."</p>
+        <p class="author">— JPL 365 Team</p>
+      </div>
+      <div class="aside-block">
+        <p class="label">On transformation</p>
+        <p class="quote">"Digital change is 20% software. The other 80% is getting people on board."</p>
+        <p class="author">— From our field notes</p>
+      </div>
+      <div class="aside-block">
+        <p class="label">On strategy</p>
+        <p class="quote">"Start with where you're losing time. That's always where we find the money."</p>
+        <p class="author">— JPL 365 Team</p>
+      </div>
+    </div>
+
+    <div class="nl-strip">
+      <h2>Get the next piece<br><em>in your inbox.</em></h2>
+      <div class="nl-form">
+        <input type="email" placeholder="your@email.com">
+        <button>Subscribe</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer style="background-color: black; color: white; padding: 1.5rem 6%; font-size: 0.8rem;">
+    &copy; 2026 JPL 365. All Rights Reserved.
+  </footer>
+
+  <script>
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      header.style.background = window.scrollY > 60
+        ? 'rgba(13,9,4,0.96)'
+        : 'linear-gradient(to bottom, rgba(13,9,4,0.88) 0%, transparent 100%)';
+    });
+
+    function togglePost(contentId, triggerEl, openLabel, closeLabel) {
+      const content = document.getElementById(contentId);
+      const isOpen = content.style.display !== 'none';
+      content.style.display = isOpen ? 'none' : 'block';
+      if (typeof triggerEl === 'string') {
+        triggerEl = document.getElementById(triggerEl);
+      }
+      triggerEl.textContent = isOpen ? openLabel : closeLabel;
+    }
+  </script>
+
+</body>
+</html>
