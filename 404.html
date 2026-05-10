@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <link rel="stylesheet" href="style.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="We help small and mid-size businesses streamline operations, 
+        automate workflows, and scale faster with expert Zoho implementation, customization, and custom software development.">
+
+        <title>Page Not Found</title>
+        <style>
+            .notFound{
+                height: calc(100vh - 300px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+        </style>
+        <link rel="stylesheet" href="style.css">
+
+
+        <!-- EmailJS -->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
+        (function(){
+        emailjs.init("8tVls5q7tnNBYZ0aT");
+        })();
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">JPL <span>365</span></div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="notFound">
+                <h1>404</h1>
+                <p>The page you requested does not exist.</p>
+                <a href="index.html">Go Home</a>
+            </div>
+
+            <section class="contact" id="contact">
+                <h1>Contact Us</h1>
+                <p>Talk to us via Email <a href="mailto:info@jpl365.com">Here</a><br></p>
+                <p><i>Or send us a quick message</i></p>
+                <div class="details">
+                    
+                    <input type="text" id="firstName" placeholder="First Name">
+                    <input type="text" id="secondName" placeholder="Second Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="text" id="organization" placeholder="Organization">
+
+                    <textarea id="message" placeholder="Leave us a short message"></textarea>
+                    <button onclick="submitForm()">Submit</button>
+                    <div id="form-msg"> Message received we'll be in touch within 24 hours.</div>
+
+                </details>
+            </section>
+
+        </main>
+        
+        <footer style="background-color: black; color: white; ">
+            info@jpl365.com
+           &copy; 2026 JPL 365  All Rights Reserved. 
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
+
