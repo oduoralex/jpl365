@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="UTF-8" />
@@ -28,22 +29,40 @@
 
 <body>
 
+  <!-- =========================
+       HEADER
+  ========================== -->
+
   <header>
 
     <div class="logo">
       JPL <span>365</span>
     </div>
 
-    <nav>
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+
+    <nav id="navMenu">
+
       <a href="index.html">Home</a>
+
       <a href="blog.html">Blog</a>
+
       <a href="#services">Services</a>
+
       <a href="#contact">Contact</a>
+
     </nav>
 
   </header>
 
+  <!-- =========================
+       HERO
+  ========================== -->
+
   <section class="hero">
+
     <div class="hero-grid"></div>
 
     <div class="hero-content reveal">
@@ -80,6 +99,10 @@
 
   </section>
 
+  <!-- =========================
+       WHY JPL
+  ========================== -->
+
   <main>
 
     <section class="reveal">
@@ -89,7 +112,7 @@
         Why JPL 365
       </div>
 
-      <h1>
+      <h1 class="section-title">
         Technology should remove friction and not create more of it.
       </h1>
 
@@ -173,6 +196,10 @@
 
     </section>
 
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
     <section id="services" class="reveal">
 
       <div class="section-label">
@@ -180,15 +207,13 @@
         Services
       </div>
 
-      <h1>
+      <h1 class="section-title">
         Solutions built around how your business actually works.
       </h1>
 
       <div class="services-grid">
 
         <article>
-
-          <!-- <div class="service-icon red"></div> -->
 
           <h2>Zoho Implementation</h2>
 
@@ -202,8 +227,6 @@
 
         <article>
 
-          <!-- <div class="service-icon blue"></div> -->
-
           <h2>Software Development</h2>
 
           <p>
@@ -215,8 +238,6 @@
 
         <article>
 
-          <!-- <div class="service-icon green"></div> -->
-
           <h2>Web Development</h2>
 
           <p>
@@ -227,8 +248,6 @@
         </article>
 
         <article>
-
-          <!-- <div class="service-icon yellow"></div> -->
 
           <h2>Workflow Automation</h2>
 
@@ -243,6 +262,10 @@
 
     </section>
 
+    <!-- =========================
+         PROCESS
+    ========================== -->
+
     <section class="reveal">
 
       <div class="section-label">
@@ -250,7 +273,7 @@
         Process
       </div>
 
-      <h1>
+      <h1 class="section-title">
         A structured approach to digital transformation.
       </h1>
 
@@ -312,6 +335,10 @@
 
     </section>
 
+    <!-- =========================
+         CTA
+    ========================== -->
+
     <section class="cta-banner reveal">
 
       <h1>
@@ -335,6 +362,10 @@
 
     </section>
 
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
     <section id="contact" class="contact reveal">
 
       <div class="section-label">
@@ -342,7 +373,7 @@
         Contact
       </div>
 
-      <h1>
+      <h1 class="section-title">
         Start your next digital project with us.
       </h1>
 
@@ -354,24 +385,37 @@
       </p>
 
       <div class="details">
+
         <input type="text" id="firstName" placeholder="First Name" />
+
         <input type="text" id="secondName" placeholder="Second Name" />
+
         <input type="email" id="email" placeholder="Email Address" />
+
         <input type="text" id="organization" placeholder="Organization" />
+
         <textarea
           id="message"
           placeholder="Tell us about your project"
         ></textarea>
 
-        <button id="submit-btn" onclick="submitForm()">Send Message</button>
+        <button id="submit-btn" onclick="submitForm()">
+          Send Message
+        </button>
 
-        <div id="form-msg"> Message received. We'll get back to you shortly.</div>
+        <div id="form-msg">
+          Message received. We'll get back to you shortly.
+        </div>
 
       </div>
 
     </section>
 
   </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
   <footer class="footer">
 
@@ -393,8 +437,11 @@
     <div class="footer-links">
 
       <a href="index.html">Home</a>
+
       <a href="blog.html">Blog</a>
+
       <a href="#services">Services</a>
+
       <a href="#contact">Contact</a>
 
     </div>
@@ -408,4 +455,5 @@
   <script src="script.js"></script>
 
 </body>
+
 </html>

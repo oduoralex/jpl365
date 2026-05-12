@@ -1,4 +1,55 @@
 // ================================
+// MOBILE MENU
+// ================================
+
+const hamburger =
+document.getElementById('hamburger');
+
+const navMenu =
+document.getElementById('navMenu');
+
+if(hamburger){
+
+  hamburger.addEventListener('click', () => {
+
+    navMenu.classList.toggle('active');
+
+    // Toggle hamburger icon
+
+    if(navMenu.classList.contains('active')){
+
+      hamburger.innerHTML = '✕';
+
+    } else {
+
+      hamburger.innerHTML = '☰';
+    }
+
+  });
+}
+
+// ================================
+// CLOSE MENU ON LINK CLICK
+// ================================
+
+const navLinks =
+document.querySelectorAll('#navMenu a');
+
+navLinks.forEach(link => {
+
+  link.addEventListener('click', () => {
+
+    navMenu.classList.remove('active');
+
+    if(hamburger){
+      hamburger.innerHTML = '☰';
+    }
+
+  });
+
+});
+
+// ================================
 // HEADER EFFECT
 // ================================
 
@@ -41,7 +92,7 @@ new IntersectionObserver((entries)=>{
           'visible'
         );
 
-      }, i*70);
+      }, i * 70);
 
       obs.unobserve(e.target);
     }
@@ -51,7 +102,7 @@ new IntersectionObserver((entries)=>{
   threshold:0.1
 });
 
-reveals.forEach(el=>
+reveals.forEach(el =>
   obs.observe(el)
 );
 
@@ -94,13 +145,30 @@ function togglePost(
 
 function submitForm(){
 
-  const fname = document.getElementById('firstName').value.trim();
-  const sname = document.getElementById('secondName' ).value.trim();
-  const email =document.getElementById('email').value.trim();
-  const organization =document.getElementById('organization').value.trim();
- const msg =document.getElementById('message').value.trim();
+  const fname =
+  document.getElementById('firstName').value.trim();
 
-  if( !fname || !sname || !organization ||!email ||!msg){
+  const sname =
+  document.getElementById('secondName').value.trim();
+
+  const email =
+  document.getElementById('email').value.trim();
+
+  const organization =
+  document.getElementById('organization').value.trim();
+
+  const msg =
+  document.getElementById('message').value.trim();
+
+  // VALIDATION
+
+  if(
+    !fname ||
+    !sname ||
+    !organization ||
+    !email ||
+    !msg
+  ){
 
     alert(
       'Please fill in all the required details'
@@ -112,18 +180,31 @@ function submitForm(){
   const button =
   document.getElementById('submit-btn');
 
-  button.innerHTML = 'Sending...';
+  button.innerHTML =
+  'Sending...';
+
+  button.disabled = true;
 
   const templateParams = {
+
     firstName: fname,
+
     name: fname,
+
     secondName: sname,
+
     organization: organization,
+
     message: msg,
+
     email: email
   };
 
-  emailjs.send("service_aeepqaz","template_l2pdkvd", templateParams)
+  emailjs.send(
+    "service_aeepqaz",
+    "template_l2pdkvd",
+    templateParams
+  )
 
   .then(function(){
 
@@ -131,6 +212,8 @@ function submitForm(){
     document.getElementById('form-msg');
 
     m.style.display ='block';
+
+    // CLEAR FORM
 
     [
       'firstName',
@@ -142,9 +225,7 @@ function submitForm(){
 
     .forEach(id => {
 
-      document.getElementById(
-        id
-      ).value='';
+      document.getElementById(id).value='';
 
     });
 
@@ -157,6 +238,8 @@ function submitForm(){
 
       button.innerHTML=
       'Send Message';
+
+      button.disabled = false;
 
     },4000);
 
@@ -175,5 +258,7 @@ function submitForm(){
 
     button.innerHTML =
     'Send Message';
+
+    button.disabled = false;
   });
 }
