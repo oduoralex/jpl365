@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quotes & Pricing | Alex Oduor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --red:#E42527;
+  --blue:#146EF5;
+  --green:#19B36B;
+  --yellow:#F4B400;
+  --dark:#0F172A;
+  --light:#64748B;
+  --bg:#F8FAFC;
+  --border:#E2E8F0;
+  --shadow:0 10px 40px rgba(15,23,42,.08);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:#334155;
+}
+
+header{
+
+  background:white;
+
+  padding:25px 8%;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.logo{
+
+  font-size:1.5rem;
+
+  font-weight:800;
+
+  color:var(--dark);
+}
+
+.logo span{
+  color:var(--red);
+}
+
+.hero{
+
+  text-align:center;
+
+  padding:100px 20px 60px;
+}
+
+.hero h1{
+
+  font-size:3rem;
+
+  color:var(--dark);
+
+  margin-bottom:15px;
+}
+
+.hero p{
+
+  max-width:700px;
+
+  margin:auto;
+
+  color:var(--light);
+}
+
+.pricing{
+
+  padding:50px 8% 100px;
+}
+
+.pricing-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+
+  gap:30px;
+}
+
+.card{
+
+  background:white;
+
+  border-radius:24px;
+
+  overflow:hidden;
+
+  box-shadow:var(--shadow);
+
+  transition:.3s;
+}
+
+.card:hover{
+
+  transform:translateY(-10px);
+}
+
+.card-header{
+
+  color:white;
+
+  text-align:center;
+
+  padding:25px;
+}
+
+.personal .card-header{
+  background:#9B59B6;
+}
+
+.business .card-header{
+  background:#19B36B;
+}
+
+.ecommerce .card-header{
+  background:#F39C12;
+}
+
+.support .card-header{
+  background:#146EF5;
+}
+
+.price{
+
+  font-size:3rem;
+
+  font-weight:800;
+
+  color:var(--dark);
+
+  text-align:center;
+
+  padding:25px 0;
+}
+
+.price span{
+
+  font-size:1rem;
+
+  color:var(--light);
+}
+
+.features{
+
+  list-style:none;
+
+  padding:0 30px 30px;
+}
+
+.features li{
+
+  padding:14px 0;
+
+  border-bottom:1px solid #eee;
+
+  text-align:center;
+}
+
+.btn{
+
+  display:block;
+
+  margin:25px;
+
+  padding:16px;
+
+  text-align:center;
+
+  text-decoration:none;
+
+  background:var(--red);
+
+  color:white;
+
+  border-radius:14px;
+
+  font-weight:600;
+}
+
+.note{
+
+  text-align:center;
+
+  margin-top:50px;
+
+  color:var(--light);
+}
+
+footer{
+
+  background:var(--dark);
+
+  color:white;
+
+  text-align:center;
+
+  padding:40px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+Alex <span>Oduor</span>
+</div>
+
+<a href="profile.html" style="text-decoration:none;color:#146EF5;">
+← Back to Portfolio
+</a>
+
+</header>
+
+<section class="hero">
+
+<h1>
+Website Packages & Pricing
+</h1>
+
+<p>
+Affordable web design, development and website support services for businesses, professionals and organizations.
+</p>
+
+</section>
+
+<section class="pricing">
+
+<div class="pricing-grid">
+
+<div class="card personal">
+
+<div class="card-header">
+<h2>Personal Website</h2>
+</div>
+
+<div class="price">
+15,000
+<br>
+<span>KES</span>
+</div>
+
+<ul class="features">
+<li>Up To 4 Pages</li>
+<li>Responsive Design</li>
+<li>2 Email Accounts</li>
+<li>Free Domain</li>
+<li>1 Month Hosting</li>
+<li>3 Months Support</li>
+</ul>
+
+<a href="mailto:alexoduor.dev@gmail.com" class="btn">
+Contact
+</a>
+
+</div>
+
+<div class="card business">
+
+<div class="card-header">
+<h2>Business Website</h2>
+</div>
+
+<div class="price">
+18,000
+<br>
+<span>KES</span>
+</div>
+
+<ul class="features">
+<li>Up To 5 Pages</li>
+<li>Responsive Design</li>
+<li>3 Email Accounts</li>
+<li>Free Domain</li>
+<li>1 Month Hosting</li>
+<li>SEO Optimization</li>
+</ul>
+
+<a href="mailto:alexoduor.dev@gmail.com" class="btn">
+Contact
+</a>
+
+</div>
+
+<div class="card ecommerce">
+
+<div class="card-header">
+<h2>eCommerce Website</h2>
+</div>
+
+<div class="price">
+30,000
+<br>
+<span>KES</span>
+</div>
+
+<ul class="features">
+<li>Up To 10 Pages</li>
+<li>Responsive Design</li>
+<li>5 Email Accounts</li>
+<li>Free Domain</li>
+<li>1 Month Hosting</li>
+<li>Product Catalogue</li>
+</ul>
+
+<a href="mailto:alexoduor.dev@gmail.com" class="btn">
+Contact
+</a>
+
+</div>
+
+<div class="card support">
+
+<div class="card-header">
+<h2>Website Troubleshooting</h2>
+</div>
+
+<div class="price">
+2,000+
+<br>
+<span>KES</span>
+</div>
+
+<ul class="features">
+<li>Website Error Fixes</li>
+<li>Broken Forms</li>
+<li>Layout Issues</li>
+<li>Hosting Problems</li>
+<li>Speed Optimization</li>
+<li>Technical Support</li>
+</ul>
+
+<a href="mailto:alexoduor.dev@gmail.com" class="btn">
+Request Help
+</a>
+
+</div>
+
+</div>
+
+<div class="note">
+
+<p>
+* Troubleshooting starts from KES 2,000 and may vary depending on the complexity of the issue.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Alex Oduor</h3>
+
+<p>Web Developer • Nairobi, Kenya</p>
+
+<br>
+
+<p>
+© 2025 All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
